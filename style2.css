@@ -15,48 +15,96 @@ body {
 body {
     -webkit-font-smoothing: antialiased;
 }
+div {
+    display: block;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+
 
 
 .site-header {
     width: 100%;
     position: absolute;
     height: 80px;
-
 }
-.site-header {
-    padding-top: 20px;
+.site-header{
+       padding-top: 20px;
     padding-bottom: 20px;
 }
-.header-contents{
-  max-width: 1140px;
-  max-height: 40px;
+.header-contents {
+    max-width: 1140px;
+    max-height: 40px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    position: relative;
+}
+.header-style{
+display: flex;
     justify-content: space-between;
 }
-.header-contents ul{
-  display:flex;
-  list-style:none;
+.header-menulist{
+    align-items: center;
+    
+}
+.header-nav .header-nav-item {
+    display: block;
+}
+.header-nav .header-nav-item > span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.header-nav .header-nav-item > span:first-child {
+    font-family: 'Lato', sans-serif;
+}
+.header-nav .header-nav-item > span:last-child {
+    font-size: 10px;
+}
+.header-nav .header-menulist > li + li {
+    margin-left: 30px;
 }
 .header-pc-logo {
     width: auto;
     height: 20px;
 }
-nav .header-menulist > li + li {
-    margin-left: 30px;
+.header-button {
+    width: 150px;
 }
-a {
-    color: #222;
+.link-button.menu {
+    height: 40px;
+    font-size: 12px;
+}
+.link-button:visited {
+    color: #fff;
+}
+
+.link-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #f79314;
+    border-radius: 30px;
     text-decoration: none;
-}
-.header-menulist{
-  height: 40px;
-}
-nav .header-nav-item > span {
-    display: block;
-    font-weight: bold;
     text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
 }
