@@ -1,63 +1,41 @@
-@charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: none;
-font-style: normal;
-text-align: left;
-zoom: 1;
+/* margin padding reset */
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select{ 
+  margin: 0; padding: 0; 
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-display: block;
+html{ 
+ -webkit-text-size-adjust: 100%; 
 }
-table {
-border-collapse: collapse;
-font-family: inherit;
+
+body{
+  -webkit-font-smoothing: antialiased; 
 }
-h1,h2,h3,h4,h5 {
-font-size: 100%;
-font-weight: normal;
-line-height: 1;
-}
-input,textarea,select {
-font-family: inherit;
-font-size: 16px;
-}
-input[type="button"],input[type="text"],input[type="submit"] {
- -webkit-appearance: none;
- border-radius: 0;
-}
-textarea {
-resize: none;
--webkit-appearance: none;
-border-radius: 0;
-}
-th,td {
-border-collapse: collapse;
-}
-table th,table td {
-white-space: nowrap;
-}
-ul,ol {
-list-style-type: none;
-}
-img {
-vertical-align: text-bottom;
-vertical-align: -webkit-baseline-middle;
-max-width: 100%;
-height: auto;
-width /***/:auto;
-}
+/* remove list point mark */
+ul, ol{ 
+  list-style: none; 
+  }
+/* remove border & off descender */
+img{
+  border: 0; vertical-align: middle;
+  }
+
+/* remove descender */
+svg, input, select, textarea, label
+{ vertical-align: middle; }
+
+/* set collapse */
+table
+{ border-collapse: collapse; }
+
+/* break word for all elements */
+*, *:before, *:after
+{ word-break: break-all; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+pre
+{ white-space: pre-wrap; }
+
+address
+{ font-style: normal; }
+
+p
+{ line-height: 1.5; }
